@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios</title>
+</head>
+<body>
+    <h1>curso de javascript: ejercicios de logica de programación</h1>
+    <script>
+        /*
+        1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+        2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
+        3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+        4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+        */
+
+        //1
+       function contCad(a){
+           console.log(a.length);
+       }
+       contCad("hola mundo");
+
+       //2
+       function contPalabra(cadena){
+            console.log(cadena.slice(0,4));
+       }
+       contPalabra("hola mundo");
+
+       //3
+       function separar(palabras){
+           let frag = [];
+           frag.push(palabras.split(" "));
+           console.log(frag);
+       }
+       separar("hola como estas");
+       // 4 
+       function repetir(frase,x){
+           console.log(frase.repeat(x));
+       }
+       repetir("hola mundo! ",4);
+       
+    </script>
+    
+</body>
+</html>
